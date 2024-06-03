@@ -124,6 +124,7 @@ int main()//função principal
 		printf("\t1 - Registrar nome\n");//barra T é pra dar espaço na linha
 		printf("\t2 - Consultar nome\n");
 		printf("\t3 - Deletar nome\n\n");
+		printf("\t4 - Sair do Sistema\n\n");
 		printf("Opção:");//fim do menu
 	
 		scanf("%d",&opcao);//armazenar escolha do usuario
@@ -143,6 +144,11 @@ int main()//função principal
 			case 3:
 			deletar();
 			break;
+			
+			case 4:
+			printf("Obrigado por utilizar o sistema!\n");
+			return 0;
+			break;	
 			
 			default:
 			printf("comando inválido.\n");
